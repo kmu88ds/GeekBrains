@@ -1,0 +1,60 @@
+body {
+    background: #f8f8f8;
+}
+
+.menu {
+   font-size: 20px;
+   font-style: bold; 
+   list-style-type: none;
+
+}
+
+.menu li a {
+    color: darkgray;
+}
+
+.heading_goods {
+    color: black;
+    background-color: #eaeaea;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.short_description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.full_description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align:left;
+}
+
+.specifications {
+   color: firebrick;
+   font-size: 18px;
+   list-style-type: lower-alpha; 
+}
+
+.input_text {
+    width: 230px;
+    height: 20px;
+}
+
+.input_question {
+    width: 230px;
+    height: 130px;
+}
+
+img[alt="Дрель MAKITA DP4010"] {
+    outline: 2px solid #666;
+}
+
+img[alt="Аккумуляторная отвёртка Military SD4.8"] {
+    outline: 2px solid #666;
+}

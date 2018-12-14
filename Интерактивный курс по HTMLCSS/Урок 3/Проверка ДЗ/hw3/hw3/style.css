@@ -1,0 +1,131 @@
+html {
+    background-color: #f8f8f8;
+}
+
+ul.menu {
+    padding: 0;
+}
+
+ul.menu li {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    list-style-type: none;
+    position: relative;
+}
+
+ul.menu a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: blue;
+}
+
+ul.menu li {
+    cursor: default;
+}
+
+ul.inline-menu > li {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 100px;
+    margin: 0;
+}
+
+ul.inline-menu > li > ul {
+    top: 100%;
+    left: -1px;
+}
+
+ul.inline-menu > li:first-child {
+    border: none;
+}
+
+li.sub-menu:hover > ul {
+    display: unset;
+}
+
+.sub-menu > ul {
+    position: absolute;
+    background-color: #f8f8f8;
+    width: max-content;
+    display: none;
+    top: 40%;
+    left: 100%;
+}
+
+.title {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.store-label{
+    font-size: 2em;
+    margin: 0 15px;
+    padding-bottom: 0;
+}
+.label-tagline {
+    font-style: initial;
+    font-size: 1.2em;
+    margin: 0 15px;
+}
+
+.short-description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.full-description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.item-specifications-list > li {
+    list-style-image: url('img/check.png') ;
+    font-size: 20px;
+    color: #930;
+}
+
+.detail-image {
+    outline: 3px solid #930;
+}
+
+form.callback input {
+    width: 200px;
+    height: 30px;
+}
+form.callback input::placeholder{
+    color: #930;
+}
+form.callback button {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+form.callback textarea {
+    width: 492px;
+    margin-bottom: 10px;
+    color: #930;
+    font-style: italic;
+}
+
+.additional-items {
+    display: inline;
+    margin: 0 15px;
+}
+
+.copyright {
+    text-decoration: none;
+    font-style: italic;
+    cursor: default;
+}
+.copyright-link {
+    cursor: pointer;
+}
