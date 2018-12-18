@@ -1,0 +1,162 @@
+body {
+    padding: 2em;
+    background-color: #f8f8f8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+.navindex a:hover {
+    color: red !important;
+}
+
+.navindex {
+    position: fixed;
+    height: auto;
+    max-width: 120px;
+    background-color: #2196f3d6;
+    padding: 10px;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+}
+
+.navindex a {
+    color: aliceblue;
+    text-shadow: 4px 4px 1px black;
+    text-transform: uppercase;
+}
+
+h1,
+h3 {
+    text-align: center
+}
+
+h1 {
+    color: #2196f3d6;
+}
+
+h3 {
+    color: white;
+    background-color: #2196f3d6;
+}
+
+.description,
+.description+p,
+.list {
+    color: darkblue;
+}
+
+
+.short {
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+ul.catalog li {
+    list-style: none;
+    display: inline-block;
+    max-width: 25%;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.copyrights {
+    text-align: center;
+    display: block;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu>li {
+    width: 24%;
+    height: 25px;
+    border: 2px solid #3F51B5;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu>li>a,
+.menu>li>a:visited {
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    color: green
+}
+
+.menu>li>a:hover {
+    background-color: #77e077
+}
+
+/*По заданию страница товара каталога, обернул в div с классом product*/
+.product h1,
+.product h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.product .description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.product .short {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.product ul>li {
+    list-style-image: url("img/marker.png");
+    color: #43a5f4;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product ul>li {
+    list-style-image: url("img/marker.png");
+    color: #43a5f4;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product img{
+    outline: 2px solid #43a5f4;
+    margin: 0 auto;
+    display:block;
+}
+form {
+    width: 440px;
+    margin: 0 auto;
+}
+form>label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    color: #607D8B;
+    font-weight: bold;
+}
+input[type="text"] {
+    width:auto;
+    height: 18px;
+    color: #43a5f4;
+    font-size: 18px;
+}
+select{
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    color: #43a5f4;
+}
+.noblock {display: inline;}
