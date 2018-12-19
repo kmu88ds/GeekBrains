@@ -1,36 +1,6 @@
-@font-face {
-    font-family: Walshein_regular;
-    src: url(fonts/GT-Walsheim-Pro-Regular.woff) format('woff');
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Walshein_light;
-    src: url(fonts/GT-Walsheim-Pro-Light.woff) format('woff');
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Walshein_black;
-    src: url(fonts/GT-Walsheim-Pro-Black.woff) format('woff');
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: RoubleSign;
-    src: url(fonts/rouble-webfont.woff) format('woff');
-    font-weight: 400;
-    font-style: normal
-}
-
-
 body {
     padding: 2em;
     background-color: #f8f8f8;
-    font-family: Walshein_regular;
 }
 
 iframe {
@@ -48,7 +18,6 @@ a:hover,
 
 p {
     text-indent: 15px;
-    font-family: Walshein_light;
 }
 
 .navindex {
@@ -75,7 +44,6 @@ h3 {
 
 h1 {
     color: #2196f3d6;
-    font-family: Walshein_black;
 }
 
 h3 {
@@ -305,31 +273,4 @@ select {
 
 .noblock {
     display: inline;
-}
-
-.product .cart:first-child {
-    height: 50px;
-    width: 2.5em;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    position: fixed;
-    right: 0px;
-    top: 60px;
-    text-align: center;
-    padding: 0 5px;
-    background-color: chartreuse;
-    transition-duration: 2s;
-    cursor: pointer;
-}
-
-.product .cart:hover {
-    width: 5em;
-}
-
-.rubsign {
-    font-family: 'RoubleSign' !important;
-}
-
-.rubsign:after {
-    content: 'i';
 }

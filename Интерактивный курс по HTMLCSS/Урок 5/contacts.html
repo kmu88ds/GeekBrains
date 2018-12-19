@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <!-- Навигационная панель -->
+        <ul class="menu">
+            <li><a href="Index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="Registration.html">Регистрация</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <hr>
+        <!-- плавающая кнопка вернуться на главную -->
+        <div class="navindex"><a href="Index.html">На главную</a></div>
+    </div>
+    <div class="content">
+        <!-- page -->
+        <h1>Контакты</h1>
+        Наш адрес: Тюмень, ул. Салтыкова-Щедрина 58 <br>
+        Телефон для связи: <nobr class="phone">+7 (982) 400-01-02</nobr><br>
+        Мы на карте:<br>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abbe1f8cf7386823f008bc69a0375d146505e93573df5bf721add3458b99d222c&amp;source=constructor" width="400" height="400" frameborder="0"></iframe>
+        <h3>Обратная связь</h3>
+        <form class="review" action="#">
+            <label>Имя: <input type="text" placeholder="Ваше имя"></label>
+            <label>E-mail: <input type="text" placeholder="Ваше e-mail"></label>
+            <label>Тема обращения: <select name="tema">
+                    <option value="review">Оставить отзыв о сервисе</option>
+                    <option value="partnership">Заявка на сотрудничество</option>
+                </select></label>
+
+            <label class="noblock">Что вам понравилось у нас?<br>Сайт<input type="checkbox" checked></label>
+            <label class="noblock">Скорость обработки заказа<input type="checkbox" checked></label>
+            <label class="noblock">Ассортимент<input type="checkbox"></label><br>
+            <textarea rows="4" cols="50" placeholder="Ваше обращение"></textarea><br>
+            <input type="submit" value="Отправить"> <input type="reset" value="Отмена">
+        </form>
+
+    </div>
+    <div class="footer">
+        <hr>
+        <span class="copyrights"><a href="https://geekbrains.ru/go/aKHH77" target="_blank" title="Моя рефералка">GeekBrains</a>&nbsp;&copy;&nbsp;2018&nbsp;Все&nbsp;права&nbsp;защищены</span>
+    </div>
+
+</body>
+
+</html>
