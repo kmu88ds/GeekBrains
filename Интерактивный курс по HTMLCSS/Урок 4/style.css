@@ -3,6 +3,10 @@ body {
     background-color: #f8f8f8;
 }
 
+iframe {
+    border: 1px solid #000;
+}
+
 a {
     text-decoration: none;
 }
@@ -10,6 +14,10 @@ a {
 a:hover,
 .navindex a:hover {
     color: red !important;
+}
+
+p {
+    text-indent: 15px;
 }
 
 .navindex {
@@ -44,18 +52,25 @@ h3 {
 }
 
 .description,
-.description+p,
+.description + p,
 .list {
     color: darkblue;
 }
 
+ol :first-letter,
+ul :first-letter,
+p:first-letter,
+h1:first-letter,
+h3:first-letter {
+    text-transform: uppercase;
+}
 
 .short {
     text-transform: uppercase;
     font-weight: bold
 }
 
-ul.catalog li {
+.catalog li {
     list-style: none;
     display: inline-block;
     max-width: 25%;
@@ -63,25 +78,56 @@ ul.catalog li {
     margin: 10px;
 }
 
+.catalog a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 135px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
 .copyrights {
     text-align: center;
     display: block;
 }
 
+.header:before {
+    content: url(img/logo.png);
+    position: absolute;
+}
+
 .menu {
+    min-height: 120px;
+    margin-left: 180px;
     list-style-type: none;
-}
-
-.menu>li {
-    width: 24%;
-    height: 25px;
-    border: 2px solid #3F51B5;
     display: inline-block;
-    text-align: center;
+    vertical-align: middle;
+    border: 2px solid olivedrab;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 0px;
 }
 
-.menu>li>a,
-.menu>li>a:visited {
+.menu > li {
+    min-width: 200px;
+    height: 25px;
+    border: 2px solid olivedrab;
+    text-align: center;
+    margin: 1px;
+}
+
+.menu > li:first-child {
+    border-top-right-radius: 10px;
+}
+
+.menu > li:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.menu > li > a,
+.menu > li > a:visited {
     padding-bottom: 2px;
     text-transform: uppercase;
     font-size: 20px;
@@ -90,9 +136,10 @@ ul.catalog li {
     color: green
 }
 
-.menu>li>a:hover {
-    background-color: #77e077
+.menu > li:active {
+    background-color: #77e077;
 }
+
 
 /*По заданию страница товара каталога, обернул в div с классом product*/
 .product h1,
@@ -101,6 +148,13 @@ ul.catalog li {
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
+}
+
+.product p:first-letter {
+    font-size: 24px;
+    color: #2196f3d6;
+    font-style: italic;
+    font-family: sans-serif;
 }
 
 .product .description {
@@ -118,45 +172,105 @@ ul.catalog li {
     line-height: 16px;
 }
 
-.product ul>li {
+.product ul > li {
     list-style-image: url("img/marker.png");
     color: #43a5f4;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.product ul>li {
+.product ul > li {
     list-style-image: url("img/marker.png");
     color: #43a5f4;
     text-transform: uppercase;
     font-weight: bold;
 }
-.product img{
+
+.product img {
     outline: 2px solid #43a5f4;
     margin: 0 auto;
-    display:block;
+    display: block;
 }
+
+.product img:hover {
+    outline: none;
+}
+
+.product table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.product table td {
+    text-align: center;
+    width: 40px;
+    height: 15px;
+    border: 1px solid #000;
+    padding: 0 5px;
+}
+
+.product tr:first-child {
+    height: 45px;
+    background-color: #2196f3d6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product tr:nth-child(2n+4) {
+    background-color: lightgray;
+}
+
+.vertical {
+    -moz-transform: rotate(-90deg);
+    /* Для Firefox */
+    -ms-transform: rotate(-90deg);
+    /* Для IE */
+    -webkit-transform: rotate(-90deg);
+    /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-90deg);
+    /* Для Opera */
+    transform: rotate(-90deg);
+}
+
 form {
     width: 440px;
     margin: 0 auto;
 }
-form>label{
+
+form > label {
     font-size: 20px;
     margin-bottom: 10px;
     display: block;
     color: #607D8B;
     font-weight: bold;
 }
+
 input[type="text"] {
-    width:auto;
+    width: auto;
     height: 18px;
     color: #43a5f4;
     font-size: 18px;
 }
-select{
+
+input {
+    text-transform: capitalize;
+}
+
+select {
     width: 400px;
     height: 30px;
     font-size: 16px;
     color: #43a5f4;
 }
-.noblock {display: inline;}
+
+.review :nth-child(2) input:focus {
+    background-color: darkgrey;
+    color: red;
+}
+
+.noblock {
+    display: inline;
+}

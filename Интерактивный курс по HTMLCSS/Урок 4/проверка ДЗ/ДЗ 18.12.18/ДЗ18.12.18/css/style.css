@@ -1,0 +1,132 @@
+body {
+	background-color: #f8f8f8;
+}
+.header{
+	height: 68px;
+}
+.header li {
+	color: #282923;
+	float: left;
+	list-style-type: none; 
+	position: relative;
+	padding: 47px 10px 20px 10px;
+}
+.header a {
+	font-style: 16px;
+	text-decoration: none;
+}
+.header a:hover{
+	color: #000;
+}
+.logo {
+	margin-top: 2px;
+	display: block;
+	top: 0;
+	height: 10%;
+	width: 10%;
+	float: left;
+}
+hr {
+	margin: 1px;
+	height: 2px;
+	width: 100%;
+	color: blue;
+	
+}
+.hello {
+	margin: 100px;
+	text-align: center
+	height: 1500px;
+	width: 400px;
+	margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+	text-align: center
+}
+img {
+	height: 250px;
+	width: 250px;
+	padding-right: 50px;
+}
+.choise {
+	height: 400px;
+}
+.choise a{
+	position: relative;
+	margin: 100px;
+}
+footer {
+	margin-top: 200px;
+	padding: 20px;
+}
+h3 {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+}
+.shortdes {
+	color: #707070;
+	font-style: italic;
+	font-size: 14px; 
+	line-height: 16px;
+
+}
+.minute {
+	color: #484343;
+	font-size: 16px:
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+.pic {
+	list-style-image: url(../img/checkbox13.png);
+	color: darkblue;
+}
+#Submit {
+	height: 300px;
+	width: 400px;
+}	
+.message {
+	color: grey;
+	font-size: 16px;
+}
+input:focus {
+  background: #96A0C4;
+  color: #fff;
+  text-transform: capitalize;
+}
+textarea:focus {
+	background: #96A0C4;
+    color: #fff;
+    text-transform: capitalize;
+}
+table {
+	height: 400px;
+	width: 800px;
+	margin-left: 100px;
+	border: 4px double black; 
+    background: #F4F5FA; 
+    padding: 10px; 
+    border-collapse: collapse;
+}
+td {
+	border: 1px solid black;
+	padding-left: 10px;
+	text-align: center;
+}
+.greyitem {
+	background: #EAEAEA;
+	height: 100px;
+}
+.image {
+	outline: 1px solid grey;
+}
+.image:hover{
+	outline: 1px solid transparent;
+}
+p:first-letter {
+	font-size: 20px;
+	font-family: sans-serif;
+}
