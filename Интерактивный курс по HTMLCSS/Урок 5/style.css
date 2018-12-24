@@ -230,7 +230,7 @@ h3:first-letter {
     background-color: #eaeaea;
 }
 
-.art,
+.product :nth-child(4),
 .short {
     overflow: hidden;
 }
